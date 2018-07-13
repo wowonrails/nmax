@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+set -e
+
+bin/rubocop --display-style-guide
+
+bin/bundle-audit update
+bin/bundle-audit
