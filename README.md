@@ -1,3 +1,8 @@
+[![Build Status](https://semaphoreci.com/api/v1/wowonrails/nmax/branches/master/shields_badge.svg)](https://semaphoreci.com/wowonrails/nmax)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7f49efece75f455dd7e8/maintainability)](https://codeclimate.com/github/wowonrails/nmax/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7f49efece75f455dd7e8/test_coverage)](https://codeclimate.com/github/wowonrails/nmax/test_coverage)
+
+
 # Программа на Ruby
 
 Анализ входящего текстового потока по условию задачи
