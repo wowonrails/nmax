@@ -3,8 +3,8 @@
 module Nmax
   class StreamAnalyzer
     def initialize(input, nmax)
-      @nmax  = nmax
-      @input = input
+      @nmax  = nmax.to_i
+      @input = input.to_s
     end
 
     def call
