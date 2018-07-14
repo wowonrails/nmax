@@ -1,11 +1,5 @@
 #!/usr/bin/env ruby
 
-# inp = $stdin.read
-# puts inp.scan(/\d+/).map(&:to_i).max(ARGV.first.to_i)
+require_relative '../lib/nmax'
 
-require 'pathname'
-nmax_path = File.expand_path('../../lib/nmax', Pathname.new(__FILE__).realpath)
-
-require nmax_path
-
-Nmax.call
+Nmax.call($stdin.read, ARGV.first.to_i).each { |n| p n }

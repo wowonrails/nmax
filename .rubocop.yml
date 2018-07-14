@@ -1,3 +1,5 @@
+require: rubocop-rspec
+
 AllCops:
   TargetRubyVersion: 2.4
   DisplayCopNames: true
@@ -6,7 +8,6 @@ AllCops:
     - "db/**/*"
     - "vendor/**/*"
     - "tmp/**/*"
-    - "spec/**/*"
 
 Style/AndOr:
   Enabled: false
@@ -51,7 +52,7 @@ Layout/AlignParameters:
     - with_first_parameter
     - with_fixed_indentation
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
   SupportedStylesAlignWith:
     - keyword

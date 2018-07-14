@@ -6,8 +6,9 @@ set -vx
 
 bundle install --path .bundle
 
-export NMAX_PATH=$(echo $(echo $(pwd); echo '/bin/nmax') | sed '/^$/d;s/[[:blank:]]//g')
-sudo echo "alias nmax='$NMAX_PATH'" >> ~/.bashrc
+NMAX_PATH="$(pwd)/bin/nmax"
+
+echo "alias nmax='$NMAX_PATH'" >> ~/.bashrc
 
 echo "Alias 'nmax' added!"
 echo "Please restart terminal!"

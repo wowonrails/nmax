@@ -3,7 +3,7 @@
 Dir[File.dirname(__FILE__).concat('/**/*.rb')].each { |path| require path }
 
 module Nmax
-  def self.call
-    StrimAnalyzer.new.call
+  def self.call(input, nmax)
+    StreamAnalyzer.new(input, nmax).call
   end
 end
