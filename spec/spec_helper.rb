@@ -1,7 +1,8 @@
-require 'bundler/setup'
-require 'nmax'
-
 require 'support/simplecov'
+
+require 'bundler/setup'
+require 'byebug'
+require 'nmax'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -4,4 +4,4 @@ set -e
 
 bin/rspec spec
 bin/quality
-bin/codeclimate-test-reporter "${SEMAPHORE_CACHE_DIR}/.coverage"
+bin/codeclimate-test-reporter "${SEMAPHORE_CACHE_DIR}/.coverage/.resultset.json"
