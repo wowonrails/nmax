@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
 bundle install --path .bundle
 
-# Do any other automated setup that you need to do here
+export NMAX_PATH=$(echo $(echo $(pwd); echo '/bin/nmax') | sed '/^$/d;s/[[:blank:]]//g')
+sudo echo "alias nmax='$NMAX_PATH'" >> ~/.bashrc
+
+echo "Alias 'nmax' added!"
+echo "Please restart terminal!"
